@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="todo-app">
+            <h1>Get Things Done!</h1>
+            <div class="input-group">
+                <input type="text" id="taskInput" placeholder="What is the task today?">
+                <select id="urgencySelect">
+                    <option value="red">Urgent</option>
+                    <option value="yellow">Medium</option>
+                    <option value="green">Low</option>
+                </select>
+                <button id="addTaskBtn">Add Task</button>
+            </div>
+            <ul id="taskList"></ul>
+        </div>
+
+        <!-- Productivity Measurement -->
+        <div class="productivity">
+            <div class="circle">
+                <div id="percentage">0%</div>
+            </div>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
