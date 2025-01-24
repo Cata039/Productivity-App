@@ -20,6 +20,58 @@
                 <button id="addTaskBtn">Add Task</button>
             </div>
             <ul id="taskList"></ul>
+        
+            <!-- News Section -->
+            <div class="chatbot-container">
+                <h1>Latest News</h1>
+                <div class="chat-window">
+                    <div id="chatMessages" class="chat-messages"></div>
+                    <input type="text" id="chatInput" placeholder="Enter a news topic (e.g., technology)...">
+                    <button id="sendChatBtn">Get News</button>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Middle Column -->
+        <div class="middle-column">
+            <div class="extra-container">
+                <h1>Meeting Details</h1>
+                <div class="input-group">
+                    <input type="text" class="meetingInput" placeholder="Meeting title?">
+                </div>
+                <div class="input-group">
+                    <input type="text" class="meetingInput" placeholder="Start time (HH:MM)">
+                </div>
+                <div class="input-group">
+                    <input type="text" class="meetingInput" placeholder="End time (HH:MM)">
+                </div>
+                <div class="input-group">
+                    <input type="text" class="meetingInput" placeholder="Participants (e.g., user@gmail.com)">
+                </div>
+                <button class="addMeetingBtn">Add Meeting</button>
+            </div>
+        </div>
+    
+        <!-- Right Column -->
+        <div class="right-column">
+            <div class="weather-container">
+                <h1>Check Weather</h1>
+                <div class="weather-input-group">
+                    <input type="text" id="weatherLocationInput" placeholder="Enter city name..." />
+                    <button id="getWeatherBtn">Get Weather</button>
+                </div>
+                <div id="weatherResult" class="weather-result"></div>
+            </div>
+    
+            <!-- World Clock Section -->
+            <div class="timezone-container">
+                <h1>World Clock</h1>
+                <div class="timezone-input-group">
+                    <select id="timezoneSelect"></select>
+                    <button id="getTimeBtn">Get Time</button>
+                </div>
+                <div id="timeResult" class="time-result"></div>
+            </div>
         </div>
 
         <!-- Productivity Measurement -->
@@ -28,8 +80,11 @@
                 <div id="percentage">0%</div>
             </div>
         </div>
+</div>
 
-    </div>
+
+
+    
     <script src="script.js"></script>
 </body>
 </html>

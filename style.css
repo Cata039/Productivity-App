@@ -11,23 +11,106 @@ body {
 }
 
 .container {
-    text-align: center;
+    /* display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap:20px;
+    max-width: 900px;
+    width:90%;
+    margin: 0 auto;
+
+    /* text-align: center;
     width: 100%;
-    max-width: 400px;
+    max-width: 400px; */ 
+
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    width: 95%;
+
+    text-align: center; /* Center-align content */
 }
+
+
 
 .todo-app {
     background-color: #2b2847;
     padding: 30px 20px;
     border-radius: 15px;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+    margin-left: 0px;
+    width: 35%;
 }
+
+
+
+
+.extra-container {
+    background-color: #2b2847;
+    padding: 30px 20px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+    width: 100%; /* Adjust the width of each container */
+    margin-left: -17%;
+    align-items: center;
+}
+
+.extra-container {
+    text-align: center; /* Center-align content */
+}
+
+.extra-container h1 {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.extra-container p {
+    font-size: 16px;
+    color: #ddd;
+}
+
+
+
 
 h1 {
     font-size: 26px;
     font-weight: bold;
     margin-bottom: 25px;
 }
+
+
+.meetingInput {
+    flex: 1;
+    padding: 12px 10px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #555;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Meeting button styling */
+.addMeetingBtn {
+    background-color: #6c63ff;
+    border: none;
+    padding: 12px 15px;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+/* Special styling for meeting tasks */
+.task-item.meeting {
+    background-color: #ff9800; /* Orange for meetings */
+    border-left: 5px solid #e65100;
+}
+
 
 /* Input Group */
 .input-group {
@@ -132,11 +215,12 @@ h1 {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    background: conic-gradient(#6c63ff 0%, #181d5e 0%);
+    background: conic-gradient(#1e1b4d 0%, #6c63ff 0%);
     display: flex;
     align-items: center;
     justify-content: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 350%;
 }
 
 /* Percentage display */
@@ -168,4 +252,167 @@ h1 {
 .task-item.green {
     background-color: #81c784; /* Green for low urgency */
     border-left: 5px solid #388e3c;
+}
+
+
+
+
+
+.weather-container {
+    background-color: #2b2847;
+    padding: 30px 20px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+    width: 100%;  /* Ensure full width of the parent */
+    max-width: 100%; /* Ensures it doesn’t exceed the parent’s width */
+    margin-right: 100px;
+    margin-left: -10%;
+    
+}
+
+.column-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 60%; /* The same width for both the todo and weather sections */
+}
+
+.weather-input-group {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#weatherLocationInput {
+    padding: 12px 10px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    border-radius: 8px;
+    width: 60%;
+    margin-right: 10px;
+}
+
+#getWeatherBtn {
+    background-color: #6c63ff;
+    border: none;
+    padding: 12px 15px;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 8px;
+}
+
+.weather-result {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+
+
+
+.timezone-container {
+    background-color: #2b2847;
+    padding: 30px 20px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    margin-top: 20px;
+    margin-left: -10%;
+    padding: 30px 20px;
+}
+
+.timezone-input-group {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#timezoneSelect {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+    margin-right: 10px;
+    width: 70%;
+}
+
+#getTimeBtn {
+    background-color: #6c63ff;
+    border: none;
+    padding: 12px 15px;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.getTimeBtn:hover {
+    background-color: #34318a;
+}
+
+.time-result {
+    font-size: 18px;
+    color: white;
+    text-align: center;
+}
+
+
+
+
+
+
+
+.chatbot-container {
+    margin-top: 20px;  /* Add space from the to-do list */
+    background-color: #2b2847;
+    padding: 20px;
+    border-radius: 15px;
+    color: white;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.chat-window {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.chat-messages {
+    height: 200px;
+    overflow-y: auto;
+    background-color: #3c3a5d;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+#chatInput {
+    padding: 10px;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    /* width: calc(100% - 90px); Ensure input box doesn't overflow */
+}
+
+#sendChatBtn {
+    background-color: #6c63ff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+
+
+.news-section p {
+    padding: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.news-section strong {
+    font-weight: bold;
+    color: #ffd700;
 }
